@@ -6,7 +6,7 @@ export default Ember.ArrayController.extend({
       var todo = this.store.createRecord('todo', {
         title: newTitle,
         isCompleted: false
-      })
+      });
 
       this.set('newTitle', '');
       todo.save();
