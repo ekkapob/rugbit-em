@@ -2,6 +2,9 @@
 
 module.exports = function(environment) {
   var ENV = {
+    contentSecurityPolicy: {
+      'media-src': "'self'"
+    },
     modulePrefix: 'rugbit-em',
     environment: environment,
     baseURL: '/',
