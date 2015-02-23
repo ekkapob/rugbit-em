@@ -12,6 +12,7 @@ export default Ember.ObjectController.extend({
       }else {
         this.get('model').save();
       }
+      console.log(this);
     },
     removeTodo: function(){
       var todo = this.get('model');
