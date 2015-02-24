@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.ObjectController.extend({
   actions: {
+
     editTodo: function(){
       this.set('isEditing', true);
     },
@@ -12,7 +13,6 @@ export default Ember.ObjectController.extend({
       }else {
         this.get('model').save();
       }
-      console.log(this);
     },
     removeTodo: function(){
       var todo = this.get('model');
